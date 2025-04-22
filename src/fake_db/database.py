@@ -41,4 +41,20 @@ class Database:
                 return
 
 
+    def reset(self):
+        self._users = [
+            {
+                'id': 1,
+                'name': 'Ivan Ivanov',
+                'email': 'i.i.ivanov@mail.com',
+            },
+            {
+                'id': 2,
+                'name': 'Petr Petrov',
+                'email': 'p.p.petrov@mail.com',
+            }
+        ]
+        self._id = len(self._users)
+
+
 db = Database()
